@@ -9,6 +9,18 @@ methodology because an environment variable can be used to provide this "inline"
 
 # Example
 
+In settings.py:
+
+    INSTALLED_APPS += (
+        ...
+        'django_saml2_auth',
+        # ensure the plugin is loaded
+        'django_saml2_auth_metadata_inline',
+        ...
+    )
+    
+    
+    
     # this is the "usual" config object from django-saml2-auth
     SAML2_AUTH = {
         'DEFAULT_NEXT_URL': '/',

@@ -4,8 +4,11 @@ https://github.com/fangli/django_saml2_auth
 """
 
 from codecs import open
-from setuptools import (setup, find_packages)
 from os import path
+
+from setuptools import (setup, find_packages)
+
+import django_saml2_auth_metadata_inline
 
 here = path.abspath(path.dirname(__file__))
 
@@ -14,9 +17,9 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='django_saml2_auth-metadata-inline',
+    name='django_saml2_auth_metadata_inline',
 
-    version='0.0.1',
+    version=django_saml2_auth_metadata_inline.__version__,
 
     description='Inline metadata plugin for django-saml2-auth',
     long_description=long_description,

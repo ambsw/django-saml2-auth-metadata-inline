@@ -1,10 +1,10 @@
 from django.conf import settings
 
-from django_saml2_auth.plugins.metadata import MetadataPlugin
+from django_saml2_auth.plugins import MetadataPlugin
 
 
 class DefaultMetadataHandler(MetadataPlugin):
-    NAME = 'INLINE'
+    KEY = 'INLINE'
 
     @classmethod
     def get_metadata(cls):

@@ -1,6 +1,6 @@
-"""The setup module for django_saml2_auth.
+"""The setup module for django_saml2_auth_metadata_inline.
 See:
-https://github.com/fangli/django_saml2_auth
+https://github.com/ambsw/django_saml2_auth_metadata_inline
 """
 
 from codecs import open
@@ -63,7 +63,8 @@ setup(
 
     packages=find_packages(),
 
-    install_requires=['django_saml2_auth',
-                      ],
+    install_requires=[
+        'django_saml2_auth',
+    ],
     include_package_data=True,
 )
